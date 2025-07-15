@@ -1,0 +1,103 @@
+/* styles/globals.css */
+
+/* Reset and layout */
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(to right, #1e3c72, #2a5298); /* blue gradient */
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 60px;
+}
+
+/* Navbar styles */
+.navbar {
+  width: 99%;
+  margin-right: 5px;
+  padding: 1rem 1rem;
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-links li a:hover {
+  color: #add8e6;
+}
+
+/* Main container (To-do card) */
+.container {
+  margin-top: 160px; /* ✅ spacing below navbar */
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: 400px;
+}
+
+/* Input & buttons */
+input[type='text'] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  margin-right: 5px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* To-do list */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li.done {
+  text-decoration: line-through;
+  color: gray;
+}
